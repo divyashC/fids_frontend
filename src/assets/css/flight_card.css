@@ -20,7 +20,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	margin: 5px 0 30px 50px;
+	margin: 10px 0 10px 30px;
 }
 
 .flight_logo {
@@ -74,16 +74,6 @@
 	justify-content: center;
 }
 
-.dot {
-	font-size: 35px;
-	color: #f24e1e;
-}
-
-.row5 {
-	margin-left: auto;
-	margin-right: 15px;
-}
-
 hr {
 	margin: 0 auto;
 	margin-top: 30px;
@@ -94,17 +84,9 @@ hr {
 .row7 {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	margin-left: 60px;
-}
-
-.row6 {
-	margin-top: 25px;
-}
-
-.row7 {
-	margin-top: 10px;
+	margin: 20px 30px 20px 30px;
 }
 
 .number {
@@ -123,19 +105,9 @@ hr {
 	color: #555555;
 }
 
-.row8 {
+.row5 {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	margin-bottom: 10px;
-}
-
-.arr {
-	font-size: 35px;
-	color: #f24e1e;
-	margin-right: 20px;
-}
-
-i {
-	cursor: pointer;
+	justify-content: center;
+	align-items: center;
 }
