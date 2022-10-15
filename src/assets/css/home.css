@@ -1,0 +1,110 @@
+.homepage {
+	margin-top: 40px;
+}
+
+.getting_started {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	padding: 5% 8%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.getting_started .content {
+	width: 45%;
+	padding: 0 5%;
+	line-height: 1.5;
+	font-size: 1.2em;
+}
+.getting_started span {
+	color: #1cacf4;
+}
+
+.getting_started p {
+	padding: 4% 0;
+}
+
+.getting_started img {
+	margin-right: 90px;
+}
+
+.about {
+	padding: 0 8%;
+	margin: 0 5%;
+}
+
+.about p {
+	padding-top: 3%;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.why {
+	padding: 4%;
+}
+
+.why img {
+	padding-top: 2%;
+	margin-bottom: 5%;
+}
+
+li span {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.how_it_works {
+	padding: 5% 9%;
+}
+
+.how_it_works h1 {
+	margin: 0 5%;
+	padding-bottom: 3%;
+}
+
+.steps {
+	margin: 0 5% 2% 8%;
+}
+
+.how_it_works h2 {
+	padding-bottom: 1%;
+}
+
+.how_it_works ul {
+	position: relative;
+	list-style: none;
+	padding: 1%;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.how_it_works ul:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #ddd;
+	width: 3px;
+	height: 100%;
+}
+
+.how_it_works ul li {
+	padding: 30px 50px;
+	position: relative;
+}
+
+.how_it_works li span {
+	position: absolute;
+	left: -28px;
+	font-size: 15px;
+	background-color: #fff;
+	padding: 15px 0;
+	top: 10px;
+	color: #6d7888;
+}
+
+.how_it_works li:hover span {
+	transform: scale(1.2);
+	transition: all 0.5s;
+}
