@@ -1,10 +1,30 @@
 import React, { Component } from "react";
 import "../assets/css/home.css";
+import GettingStarted from "../assets/images/getting_started.png";
 
 export default class Home extends Component {
 	render() {
 		return (
 			<div class="homepage">
+				<div class="getting_started">
+					<div class="content">
+						<span>Getting Started</span>
+						<h1>Check your Flight Schedule</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+							commodo ac, enim id nibh purus risus. Mauris aenean vitae
+							sollicitudin id ultrices mauris nam. Dolor ipsum in vitae sed enim
+							sapien, sapien elit. Mattis enim tortor et sapien malesuada tellus
+							facilisi. Duis sem scelerisque rutrum risus dui sed neque, cras.
+							Natoque lorem turpis egestas purus tempor, aenean ut felis. Sapien
+							tincidunt tellus augue orci. Metus, non ornare venenatis commodo,
+							aliquam.
+						</p>
+					</div>
+					<div>
+						<img src={GettingStarted} alt="Getting Started" />
+					</div>
+				</div>
 				<div class="about">
 					<h1>About Us</h1>
 					<p>
