@@ -40,7 +40,7 @@ function API() {
 						<div class="row3">
 							<div class="col1">
 								<p id="departure_time_placeholder" class="departure_time">
-									{flight.departureTime}
+									{flight.departureTime.substring(0, 5)}
 								</p>
 								<p id="origin_placeholder" class="origin">
 									{flight.originIata} - {flight.origin}
@@ -51,7 +51,7 @@ function API() {
 							</div>
 							<div class="col3">
 								<p id="arrival_time_placeholder" class="arrival_time">
-									{flight.arrivalTime}
+									{flight.arrivalTime.substring(0, 5)}
 								</p>
 								<p id="destination_placeholder" class="destination">
 									{flight.destinationIata} - {flight.destination}
@@ -59,7 +59,9 @@ function API() {
 							</div>
 						</div>
 						<div class="row4">
-							<p id="flight_date_placeholder">{flight.flightDate}</p>
+							<p id="flight_date_placeholder">
+								{flight.flightDate.substring(0, 10)}
+							</p>
 						</div>
 						<hr />
 						<div className="row5">
