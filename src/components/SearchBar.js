@@ -9,8 +9,7 @@ import BhutanAirlines from "../assets/images/bhutan_airlines_logo.png";
 
 export default function SearchBar() {
 	var api = "https://localhost:7178/api/FlightAPI";
-	const [flightData, setFlightData] = useState([]);
-	const [query, setQuery] = useState("");
+	var [flightData, setFlightData] = useState([]);
 
 	useEffect(() => {
 		fetch(api)
@@ -20,7 +19,17 @@ export default function SearchBar() {
 			});
 	}, []);
 
-	console.log(query);
+	const filteredData = flightData.filter(
+		(flight) => new Date(flight.flightDate) >= new Date()
+	);
+
+	const todaysFlights = flightData.filter(
+		(flight) =>
+			new Date(flight.flightDate).toDateString() === new Date().toDateString()
+	);
+
+	flightData = filteredData.concat(todaysFlights);
+
 	return (
 		<div className="container">
 			<div class="search">
@@ -28,7 +37,6 @@ export default function SearchBar() {
 					type="text"
 					placeholder="Search Flights..."
 					onChange={(e) => {
-						setQuery(e.target.value);
 						if (e.target.value === "") {
 							api = "https://localhost:7178/api/FlightAPI";
 						} else {
