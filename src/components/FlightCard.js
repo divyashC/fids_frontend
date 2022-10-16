@@ -7,7 +7,7 @@ import DrukAir from "../assets/images/druk_air_logo.png";
 import BhutanAirlines from "../assets/images/bhutan_airlines_logo.png";
 
 function API() {
-	var [flightData, setFlightData] = useState([]);
+	const [flightData, setFlightData] = useState([]);
 
 	useEffect(() => {
 		fetch("https://localhost:7178/api/FlightAPI")
@@ -17,16 +17,16 @@ function API() {
 			});
 	}, []);
 
-	const filteredData = flightData.filter(
-		(flight) => new Date(flight.flightDate) >= new Date()
-	);
+	// const filteredData = flightData.filter(
+	// 	(flight) => new Date(flight.flightDate) >= new Date()
+	// );
 
-	const todaysFlights = flightData.filter(
-		(flight) =>
-			new Date(flight.flightDate).toDateString() === new Date().toDateString()
-	);
+	// const todaysFlights = flightData.filter(
+	// 	(flight) =>
+	// 		new Date(flight.flightDate).toDateString() === new Date().toDateString()
+	// );
 
-	flightData = filteredData.concat(todaysFlights);
+	// flightData = filteredData.concat(todaysFlights);
 
 	return (
 		<div className="API">
