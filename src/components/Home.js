@@ -1,11 +1,28 @@
 import React, { Component } from "react";
 import "../assets/css/home.css";
 import GettingStarted from "../assets/images/getting_started.png";
+import LogoLarge from "../assets/images/fids_large.png";
 
 export default class Home extends Component {
 	render() {
 		return (
 			<div class="homepage">
+				<div class="hero_image">
+					<div class="hero_contents">
+						<img src={LogoLarge} alt="FIDS" />
+						<hr />
+						<h1>Flight Information Display System</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+							sed scelerisque pellentesque diam euismod amet. Purus, commodo
+							mauris nullam sem porttitor. Diam scelerisque lobortis pulvinar
+							nulla amet non est. Sed nec dolor pellentesque egestas quis diam
+							nam cras laoreet. Donec pharetra in elit ac, ac. Odio mattis et
+							sed odio sed. Porttitor turpis blandit posuere nulla lectus netus
+							magna magna
+						</p>
+					</div>
+				</div>
 				<div class="getting_started">
 					<div class="content">
 						<span>Getting Started</span>
