@@ -106,7 +106,6 @@ export default function SearchBar() {
 					</div>
 				</div>
 			))}
-			{/* if flightData is null, display no results */}
 			{flightData.length === 0 && <NoResults />}
 		</div>
 	);
