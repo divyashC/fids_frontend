@@ -25,7 +25,7 @@ function API() {
 							<img
 								id="flight_logo_placeholder"
 								class="flight_logo"
-								src={flight.airline == "Druk Air" ? DrukAir : BhutanAirlines}
+								src={flight.airline === "Druk Air" ? DrukAir : BhutanAirlines}
 								alt="Druk Air"
 							/>
 							<div class="flight_no">

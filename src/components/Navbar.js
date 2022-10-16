@@ -6,6 +6,7 @@ import Flights from "./Flights";
 import FlightRoutes from "./FlightRoutes";
 import Help from "./Help";
 import Home from "./Home";
+import Search from "./FlightSearch";
 
 export default class Navbar extends Component {
 	render() {
@@ -24,7 +25,12 @@ export default class Navbar extends Component {
 							</li>
 							<li>
 								<Link class="link_effect" to="/flights">
-									Flight Details
+									Flights
+								</Link>
+							</li>
+							<li>
+								<Link class="link_effect" to="/search">
+									Search
 								</Link>
 							</li>
 							<li>
@@ -41,9 +47,17 @@ export default class Navbar extends Component {
 					</nav>
 					<ul class="button" id="button">
 						<li>
-							<Link class="admin_portal button_effect" to="/home">
+							<a
+								href="https://localhost:7178/"
+								target="_blank"
+								class="admin_portal button _effect"
+								rel="noopener noreferrer"
+							>
+								Admin
+							</a>
+							{/* <Link class="admin_portal button_effect" to="/home">
 								Sign In
-							</Link>
+							</Link> */}
 						</li>
 					</ul>
 				</header>
@@ -52,6 +66,7 @@ export default class Navbar extends Component {
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route path="/flights" element={<Flights />} />
+						<Route path="/search" element={<Search />} />
 						<Route path="/routes" element={<FlightRoutes />} />
 						<Route path="/help" element={<Help />} />
 					</Routes>
