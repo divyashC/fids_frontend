@@ -16,7 +16,10 @@ export default function Flights() {
 	);
 
 	const [hour, mins, seconds] = currentTime.split(":");
-	const hoursInt = hour < 12 ? parseInt(hour) + 12 : hour;
+	const ampm = hour < 12 ? "AM" : "PM";
+	const hoursInt =
+		ampm === "PM" ? (hour < 12 ? parseInt(hour) + 12 : hour) : hour;
+
 	const hours = hoursInt.toString();
 
 	React.useEffect(() => {
