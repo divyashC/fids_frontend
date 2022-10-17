@@ -30,7 +30,7 @@
 	border-radius: 0 0 20px 20px;
 	background-color: #1e3f66;
 	color: #ffffff;
-	padding: 8% 8%;
+	padding: 8% 10%;
 }
 
 .card_images img {
@@ -41,11 +41,10 @@
 
 .card_body h3 {
 	font-size: 1.5em;
-	padding: 0 0 15px 0;
 }
 
 .card_body p {
-	font-size: 1em;
+	font-size: 1.3em;
 	padding: 3px 0;
 }
 

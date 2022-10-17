@@ -71,6 +71,10 @@ export default class Navbar extends Component {
 						<Route path="/help" element={<Help />} />
 					</Routes>
 				</div>
+
+				{/* <footer>
+					<p>© 2022 - Flight Information Display System</p>
+				</footer> */}
 			</Router>
 		);
 	}

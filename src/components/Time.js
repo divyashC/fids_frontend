@@ -16,11 +16,11 @@ export default function Flights() {
 	);
 
 	const [hour, mins, seconds] = currentTime.split(":");
-	const ampm = hour < 12 ? "AM" : "PM";
-	const hoursInt =
-		ampm === "PM" ? (hour < 12 ? parseInt(hour) + 12 : hour) : hour;
-
-	const hours = hoursInt.toString();
+	var hours = ((hour < 12 ? "AM" : "PM") === "PM"
+		? parseInt(hour) + 12
+		: hour
+	).toString();
+	hours = hours.length === 1 ? "0" + hours : hours;
 
 	React.useEffect(() => {
 		setInterval(() => {
