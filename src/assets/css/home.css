@@ -62,7 +62,7 @@
 
 .about {
 	padding: 0 8%;
-	margin: 0 5%;
+	margin: 0 5% 8% 5%;
 }
 
 .about p {
@@ -86,7 +86,7 @@ li span {
 }
 
 .how_it_works {
-	padding: 5% 9%;
+	padding: 2% 9% 5% 9%;
 }
 
 .how_it_works h1 {

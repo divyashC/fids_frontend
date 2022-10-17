@@ -16,7 +16,8 @@ export default function Flights() {
 	);
 
 	const [hour, mins, seconds] = currentTime.split(":");
-	var hours = ((hour < 12 ? "AM" : "PM") === "PM"
+
+	var hours = (currentTime.split(" ")[1] === "PM"
 		? parseInt(hour) + 12
 		: hour
 	).toString();

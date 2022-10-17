@@ -42,51 +42,6 @@ export default class Home extends Component {
 						<img src={GettingStarted} alt="Getting Started" />
 					</div>
 				</div>
-				<div class="about">
-					<h1>About Us</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam purus
-						faucibus in cursus ac. Risus justo posuere neque sodales nulla.
-						Magna id turpis tincidunt nulla fringilla praesent. Porta quis
-						tortor lorem nunc dolor semper pharetra. Id suspendisse tempor eget
-						eleifend ultricies sed. Viverra in porta et tincidunt sed sit eget.
-						Hendrerit consequat enim sodales potenti vitae egestas integer nunc
-						semper. Pellentesque fringilla maecenas lectus non amet elit. Felis
-						amet commodo fringilla sit. Tristique bibendum commodo non eget eu
-						nec. Mollis odio rutrum donec nisl cursus. Mauris sed semper integer
-						in. Aenean porttitor viverra fermentum consectetur. Enim donec
-						cursus ornare vel tellus. Libero, non turpis rhoncus, etiam gravida
-						rutrum. Leo venenatis lectus neque sagittis. Posuere felis ac lacus
-						id. Nisl maecenas nulla quis ipsum nullam varius mattis. Leo mi
-						laoreet est ullamcorper vitae vel integer mattis id. Morbi gravida
-						accumsan morbi tellus. Suspendisse feugiat tristique erat porta et
-						felis adipiscing quisque amet. Hendrerit sed amet morbi in cras
-						praesent sapien. Nulla amet dolor at sed est laoreet montes. Mauris
-						id amet imperdiet ultrices vestibulum maecenas hac mauris sed. A,
-						tortor platea viverra lacinia risus quis amet.
-					</p>
-					<p>
-						Sit sapien, et non id in amet. Etiam ultricies porta consectetur
-						aliquam urna quis ut malesuada. Sed dolor ut eget platea eu.
-						Lobortis in orci pellentesque quisque dictum sed sit mattis et. In
-						integer id morbi quis lorem. Pulvinar lectus duis sapien volutpat ut
-						ultrices. At sed pellentesque aliquam erat. Lacus diam quisque ac
-						ultricies mauris quis. Arcu nibh dignissim ornare aliquet nulla
-						massa. Sagittis pulvinar neque, imperdiet libero adipiscing eget
-						quis sit. Odio et tortor, varius in senectus arcu a quis. Gravida
-						adipiscing faucibus tellus amet, tellus viverra. Duis arcu, euismod
-						lectus quis. Id nec quam praesent risus, adipiscing orci, nascetur
-						ut. Aliquet malesuada platea bibendum et habitant et. Tellus mollis
-						parturient dignissim proin amet vel et. Purus ullamcorper in fames
-						enim varius et vulputate maecenas morbi. Tristique suspendisse
-						dictum sapien donec congue condimentum non eu erat. Odio quis turpis
-						feugiat scelerisque cursus risus turpis quis at. Enim lectus justo
-						facilisis mi. Ipsum dictumst scelerisque dolor duis eu tristique cum
-						quam turpis. Sit lacus elementum, volutpat lorem donec lacus nibh
-						magna. Risus scelerisque sed sodales ut est donec morbi.
-						Pellentesque ultrices ultrices quam non netus faucibus nunc.
-					</p>
-				</div>
 
 				<div class="how_it_works">
 					<h1>How it works?</h1>
@@ -155,6 +110,52 @@ export default class Home extends Component {
 							culpa.
 						</li>
 					</ul>
+				</div>
+
+				<div class="about">
+					<h1>About Us</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam purus
+						faucibus in cursus ac. Risus justo posuere neque sodales nulla.
+						Magna id turpis tincidunt nulla fringilla praesent. Porta quis
+						tortor lorem nunc dolor semper pharetra. Id suspendisse tempor eget
+						eleifend ultricies sed. Viverra in porta et tincidunt sed sit eget.
+						Hendrerit consequat enim sodales potenti vitae egestas integer nunc
+						semper. Pellentesque fringilla maecenas lectus non amet elit. Felis
+						amet commodo fringilla sit. Tristique bibendum commodo non eget eu
+						nec. Mollis odio rutrum donec nisl cursus. Mauris sed semper integer
+						in. Aenean porttitor viverra fermentum consectetur. Enim donec
+						cursus ornare vel tellus. Libero, non turpis rhoncus, etiam gravida
+						rutrum. Leo venenatis lectus neque sagittis. Posuere felis ac lacus
+						id. Nisl maecenas nulla quis ipsum nullam varius mattis. Leo mi
+						laoreet est ullamcorper vitae vel integer mattis id. Morbi gravida
+						accumsan morbi tellus. Suspendisse feugiat tristique erat porta et
+						felis adipiscing quisque amet. Hendrerit sed amet morbi in cras
+						praesent sapien. Nulla amet dolor at sed est laoreet montes. Mauris
+						id amet imperdiet ultrices vestibulum maecenas hac mauris sed. A,
+						tortor platea viverra lacinia risus quis amet.
+					</p>
+					<p>
+						Sit sapien, et non id in amet. Etiam ultricies porta consectetur
+						aliquam urna quis ut malesuada. Sed dolor ut eget platea eu.
+						Lobortis in orci pellentesque quisque dictum sed sit mattis et. In
+						integer id morbi quis lorem. Pulvinar lectus duis sapien volutpat ut
+						ultrices. At sed pellentesque aliquam erat. Lacus diam quisque ac
+						ultricies mauris quis. Arcu nibh dignissim ornare aliquet nulla
+						massa. Sagittis pulvinar neque, imperdiet libero adipiscing eget
+						quis sit. Odio et tortor, varius in senectus arcu a quis. Gravida
+						adipiscing faucibus tellus amet, tellus viverra. Duis arcu, euismod
+						lectus quis. Id nec quam praesent risus, adipiscing orci, nascetur
+						ut. Aliquet malesuada platea bibendum et habitant et. Tellus mollis
+						parturient dignissim proin amet vel et. Purus ullamcorper in fames
+						enim varius et vulputate maecenas morbi. Tristique suspendisse
+						dictum sapien donec congue condimentum non eu erat. Odio quis turpis
+						feugiat scelerisque cursus risus turpis quis at. Enim lectus justo
+						facilisis mi. Ipsum dictumst scelerisque dolor duis eu tristique cum
+						quam turpis. Sit lacus elementum, volutpat lorem donec lacus nibh
+						magna. Risus scelerisque sed sodales ut est donec morbi.
+						Pellentesque ultrices ultrices quam non netus faucibus nunc.
+					</p>
 				</div>
 			</div>
 		);

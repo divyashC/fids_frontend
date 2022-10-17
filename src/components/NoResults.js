@@ -6,7 +6,7 @@ export default class NoResults extends Component {
 		return (
 			<div className="results_container">
 				<div className="no_results">
-					<p>No Flights....</p>
+					<p className="no_results_p">No Flights....</p>
 				</div>
 			</div>
 		);
