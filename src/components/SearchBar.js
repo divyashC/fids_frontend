@@ -8,11 +8,13 @@ import DrukAir from "../assets/images/druk_air_logo.png";
 import BhutanAirlines from "../assets/images/bhutan_airlines_logo.png";
 
 export default function SearchBar() {
-	var api = "https://localhost:7178/api/FlightAPI";
+	var base = "https://localhost:7178/api/FlightAPI";
+	var search = "https://localhost:7178/api/FlightAPI";
+	var api = base;
 	const [flightData, setFlightData] = useState([]);
 
 	useEffect(() => {
-		fetch(api)
+		fetch(base)
 			.then((response) => response.json())
 			.then((data) => {
 				setFlightData(data);
@@ -27,10 +29,9 @@ export default function SearchBar() {
 					placeholder="Search Flights..."
 					onChange={(e) => {
 						if (e.target.value === "") {
-							api = "https://localhost:7178/api/FlightAPI";
+							api = base;
 						} else {
-							api =
-								"https://localhost:7178/api/FlightAPI/search/" + e.target.value;
+							api = search + e.target.value;
 						}
 						// update flightData with new api
 						fetch(api)
@@ -40,9 +41,6 @@ export default function SearchBar() {
 							});
 					}}
 				/>
-				{/* <button>
-					<i class="bi bi-search large"></i>
-				</button> */}
 			</div>
 			{flightData.map((flight) => (
 				<div class="flight_details" key={flight.flightId}>

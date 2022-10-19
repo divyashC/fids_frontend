@@ -8,9 +8,9 @@ import BhutanAirlines from "../assets/images/bhutan_airlines_logo.png";
 
 function API() {
 	const [flightData, setFlightData] = useState([]);
-
+	var api = "https://localhost:7178/api/FlightAPI";
 	useEffect(() => {
-		fetch("https://localhost:7178/api/FlightAPI")
+		fetch(api)
 			.then((response) => response.json())
 			.then((data) => {
 				setFlightData(data);

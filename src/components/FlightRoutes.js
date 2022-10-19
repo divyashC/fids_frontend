@@ -4,40 +4,6 @@ import "../assets/css/routes.css";
 import { Link } from "react-router-dom";
 
 export default function FlightRoutes() {
-	// const full = [
-	// 	"Paro to Guwahati",
-	// 	"Paro to Kolkata",
-	// 	"Paro to Bagdogra",
-	// 	"Paro to Dhaka",
-	// 	"Paro to Kathmandu",
-	// 	"Paro to Delhi",
-	// 	"Paro to Bangkok",
-	// 	"Paro to Singapore",
-	// 	"Paro to Bumthang",
-	// 	"Paro to Yonphula",
-	// 	"Paro to Gaya",
-	// 	"Paro to Gelephu",
-	// ];
-
-	// const iata = [
-	// 	"PBH - GAU",
-	// 	"PBH - CCU",
-	// 	"PBH - IXB",
-	// 	"PBH - DAC",
-	// 	"PBH - KTM",
-	// 	"PBH - DEL",
-	// 	"PBH - BKK",
-	// 	"PBH - SIN",
-	// 	"PBH - BUM",
-	// 	"PBH - YOM",
-	// 	"PBH - GAY",
-	// 	"PBH - GLU",
-	// ];
-
-	// const routes = full.map((item, index) => {
-	// 	return { full: item, iata: iata[index] };
-	// });
-
 	const routes = {
 		1: {
 			full: "Paro to Guwahati",
