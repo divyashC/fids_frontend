@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import NoResults from "./NoResults";
+import ServiceUnavailable from "./ConnectionError";
 import "../assets/css/flight_card.css";
 import PathImg from "../assets/images/path.png";
 import DrukAir from "../assets/images/druk_air_logo.png";
@@ -89,7 +89,7 @@ function API() {
 					</div>
 				</div>
 			))}
-			{flightData.length === 0 && <NoResults />}
+			{flightData.length === 0 && <ServiceUnavailable />}
 		</div>
 	);
 
