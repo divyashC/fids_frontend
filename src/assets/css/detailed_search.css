@@ -1,0 +1,11 @@
+/* input type submit */
+input[type="submit"] {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background: #1e3f66;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	height: 40px;
+	width: 100px;
+}

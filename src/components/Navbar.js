@@ -9,6 +9,7 @@ import Home from "./Home";
 import Map from "./Map";
 import Search from "./FlightSearch";
 import SearchBar from "./SearchBar";
+import DetailedSearch from "./DetailedSearch";
 
 export default class Navbar extends Component {
 	render() {
@@ -73,6 +74,7 @@ export default class Navbar extends Component {
 						<Route path="/map" element={<Map />} />
 						<Route path="/help" element={<Help />} />
 						<Route path="/searchflights" element={<SearchBar />} />
+						<Route path="/detailedSearch" element={<DetailedSearch />} />
 					</Routes>
 				</div>
 

@@ -3,17 +3,13 @@ import "../assets/css/flight_search.css";
 import { Link } from "react-router-dom";
 import TodayImage from "../assets/images/today.png";
 import UpcomingImage from "../assets/images/upcoming.png";
-import PastImage from "../assets/images/past.png";
+import DetailedSearch from "../assets/images/detailed.png";
 
 export default function FlightSearch() {
 	const apis = {
 		upcoming: {
 			base: "https://localhost:7178/api/FlightAPI",
 			search: "https://localhost:7178/api/FlightAPI/search/",
-		},
-		past: {
-			base: "https://localhost:7178/api/FlightAPI/past",
-			search: "https://localhost:7178/api/FlightAPI/search/past/",
 		},
 		today: {
 			base: "https://localhost:7178/api/FlightAPI/today",
@@ -24,13 +20,13 @@ export default function FlightSearch() {
 		<div>
 			<div className="buttons">
 				<div class="card">
-					<Link to="/searchflights" state={apis.past}>
+					<Link to="/detailedSearch">
 						<div class="card-image">
-							<img src={PastImage} alt="Map" />
+							<img src={DetailedSearch} alt="Map" />
 						</div>
 						<div class="card_body">
-							<h3>Past Flights</h3>
-							<p>Past</p>
+							<h3>Detailed Search</h3>
+							<p>Origin | Destination | Date</p>
 						</div>
 					</Link>
 				</div>
@@ -41,7 +37,7 @@ export default function FlightSearch() {
 						</div>
 						<div class="card_body">
 							<h3>Today's Flights</h3>
-							<p>Todays</p>
+							<p>Origin | Destination</p>
 						</div>
 					</Link>
 				</div>
@@ -52,7 +48,7 @@ export default function FlightSearch() {
 						</div>
 						<div class="card_body">
 							<h3>Upcoming Flights</h3>
-							<p>Upcoming</p>
+							<p>Origin | Destination</p>
 						</div>
 					</Link>
 				</div>
